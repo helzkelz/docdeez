@@ -203,8 +203,8 @@ When planning a major version change (e.g., v2.0 of the Orchestrator):
 
 ### Opportunities for Cross-Agent/Platform Collaboration
 
-* **HelenKella <> Neunuc:** The **NLP moderation engine** from HelenKella could be repurposed as a new **Agent** in the Neunuc Orchestrator to monitor and analyze unstructured text logs from factory machinery for anomaly detection.
-* **Discord Bot <> Neunuc:** The 'Bethy' bot could be given a read-only API key to the Neunuc Orchestrator. This would allow authorized users in a private Discord channel to issue commands like `!workflow_status <id>` to get real-time updates on critical production jobs.
+* **HelenKella &lt;&gt; Neunuc:** The **NLP moderation engine** from HelenKella could be repurposed as a new **Agent** in the Neunuc Orchestrator to monitor and analyze unstructured text logs from factory machinery for anomaly detection.
+* **Discord Bot &lt;&gt; Neunuc:** The 'Bethy' bot could be given a read-only API key to the Neunuc Orchestrator. This would allow authorized users in a private Discord channel to issue commands like `!workflow_status <id>` to get real-time updates on critical production jobs.
 
 ### Predicted Scaling Bottlenecks (Next 6-12 Months)
 

@@ -62,3 +62,9 @@ All automations are:
 
 - Logged via the **Ethos Navigator**
 - Subject to per-integration and per-user **consent policies**
+
+---
+
+## Voice & Ritual Integrations
+
+For voice-based ritual triggers and emotional processing, see the [Discord Voice Integrations](./discord-voice-integrations.md) page.
