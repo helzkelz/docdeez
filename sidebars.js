@@ -22,6 +22,7 @@ const sidebars = {
         'godmode/godmode-subsystems',
         'godmode/godmode-data-model',
         'godmode/godmode-integrations',
+        'godmode/ecosystem-master-plan',
       ],
     },
   ],
