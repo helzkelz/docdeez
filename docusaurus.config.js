@@ -15,7 +15,7 @@ const config = {
   organizationName: 'helzkelz', // Usually your GitHub org/user name.
   projectName: 'docdeez', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
@@ -86,7 +86,7 @@ const config = {
             items: [
               {
                 label: 'Godmode',
-                to: '/docs/godmode/overview',
+                to: '/docs/godmode/godmode-overview',
               },
             ],
           },

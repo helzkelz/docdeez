@@ -93,7 +93,7 @@ Godmode is organized into four primary layers:
 
 For deep dives, see:
 
-- [Architecture](./architecture)
-- [Sub-systems](./subsystems)
-- [Data Model](./data-model)
-- [Integrations](./integrations)
+- [Architecture](./godmode-architecture)
+- [Sub-systems](./godmode-subsystems)
+- [Data Model](./godmode-data-model)
+- [Integrations](./godmode-integrations)
