@@ -1,12 +1,12 @@
 ---
-id: godmode-architecture
+id: neunuc-architecture
 title: System Architecture
 sidebar_label: Architecture
 ---
 
-This page describes the **high-level architecture** of the HelenKella Godmode System.
+This page describes the **high-level architecture** of the HelenKella Neunuc System.
 
-Godmode is structured as a **layered, modular platform** composed of:
+Neunuc is structured as a **layered, modular platform** composed of:
 
 - A **data fabric & integration layer**
 - A **core intelligence layer**

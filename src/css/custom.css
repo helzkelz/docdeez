@@ -100,3 +100,31 @@
   margin-bottom: 1rem;
   color: var(--ifm-color-emphasis-700);
 }
+
+/* Homepage CTA section styles */
+.ctaSection {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ctaSection h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.ctaSection p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.hero__description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}

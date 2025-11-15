@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DocDeez',
-  tagline: 'Documentation for HelenKella Godmode',
+  title: 'Neunuc',
+  tagline: 'Built by the Excluded for Inclusion',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -58,17 +58,23 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'DocDeez',
+        title: 'Neunuc',
         logo: {
-          alt: 'DocDeez Logo',
+          alt: 'Neunuc Logo',
           src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'godmode',
+            sidebarId: 'neunuc',
             position: 'left',
-            label: 'Godmode',
+            label: 'Neunuc',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'moderation',
+            position: 'left',
+            label: 'Moderation Stack',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -85,8 +91,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Godmode',
-                to: '/docs/godmode/godmode-overview',
+                label: 'Neunuc',
+                to: '/docs/neunuc/neunuc-overview',
               },
             ],
           },

@@ -1,10 +1,10 @@
 ---
-id: godmode-integrations
+id: neunuc-integrations
 title: Integrations & Sync
 sidebar_label: Integrations
 ---
 
-The HelenKella Godmode System is designed as a **hub for connectivity** across multiple enterprise and personal tools.
+The HelenKella Neunuc System is designed as a **hub for connectivity** across multiple enterprise and personal tools.
 
 The **Integration Layer** is responsible for:
 
@@ -52,7 +52,7 @@ Supported categories:
 
 ### Bidirectional Sync
 
-Where appropriate, Godmode can:
+Where appropriate, Neunuc can:
 
 - Update tasks in ITSM systems (e.g. change status in Jira)
 - Create or modify calendar events

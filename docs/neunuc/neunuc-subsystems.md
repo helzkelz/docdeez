@@ -1,10 +1,10 @@
 ---
-id: godmode-subsystems
+id: neunuc-subsystems
 title: Cognitive & Culture Sub-systems
 sidebar_label: Sub-systems
 ---
 
-This page breaks down the major **sub-systems** of the HelenKella Godmode System and their responsibilities.
+This page breaks down the major **sub-systems** of the HelenKella Neunuc System and their responsibilities.
 
 ---
 
@@ -109,7 +109,7 @@ The **Ethos Navigator** ensures **verifiable trust and adaptive culture**.
   - Neurodivergent-friendly norms
   - Communication boundaries
 
-Ethos Navigator is the **ethical spine** of Godmode.
+Ethos Navigator is the **ethical spine** of Neunuc.
 
 ---
 

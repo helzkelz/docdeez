@@ -1,19 +1,19 @@
 ---
-id: godmode-overview
-title: HelenKella Godmode System
+id: neunuc-overview
+title: HelenKella Neunuc System
 sidebar_label: Overview
 ---
 
-The **HelenKella Godmode System** is an AI-powered framework designed to support **neurodivergent humans** by automating complex workflows, reducing cognitive load, and creating safer, more supportive environments for growth.
+The **HelenKella Neunuc System** is an AI-powered framework designed to support **neurodivergent humans** by automating complex workflows, reducing cognitive load, and creating safer, more supportive environments for growth.
 
-At its core, Godmode combines:
+At its core, Neunuc combines:
 
 - A **central orchestrator agent** (`Bethy`) for natural language interaction
 - A set of **cognitive & operational sub-systems** (planning, support, trust, humor)
 - A **dynamic data fabric** that unifies information from multiple tools
 - A robust **integration layer** with HR, identity, ITSM, cloud, and observability platforms
 
-Godmode is not just a productivity tool. It is a **neurodivergence-aware operational OS** that wraps around both **people** and **systems**.
+Neunuc is not just a productivity tool. It is a **neurodivergence-aware operational OS** that wraps around both **people** and **systems**.
 
 ---
 
@@ -36,7 +36,7 @@ The system is built on three pillars:
 
 ## High-Level Architecture
 
-Godmode is organized into four primary layers:
+Neunuc is organized into four primary layers:
 
 1. **Integrations & Data Fabric**  
    - Connectors for calendars, HR, ITSM, infra, logging, and collaboration tools  
@@ -61,11 +61,11 @@ Godmode is organized into four primary layers:
 ## Primary Use Cases
 
 - **Overwhelm Triage**  
-  User: “I’m overloaded. What the hell do I actually do next?”  
-  Godmode:
+  User: "I'm overloaded. What the hell do I actually do next?"  
+  Neunuc:
   - Pulls tasks/events from integrated tools  
   - Runs an **Adaptive Roadmap Review (ARR)**  
-  - Returns a minimal, safe, prioritized action list tailored to the user’s neuro profile
+  - Returns a minimal, safe, prioritized action list tailored to the user's neuro profile
 
 - **Neurodivergent-Aware Planning**  
   - Breaks down large projects into small, sequenceable steps  
@@ -93,7 +93,7 @@ Godmode is organized into four primary layers:
 
 For deep dives, see:
 
-- [Architecture](./godmode-architecture)
-- [Sub-systems](./godmode-subsystems)
-- [Data Model](./godmode-data-model)
-- [Integrations](./godmode-integrations)
+- [Architecture](./neunuc-architecture)
+- [Sub-systems](./neunuc-subsystems)
+- [Data Model](./neunuc-data-model)
+- [Integrations](./neunuc-integrations)

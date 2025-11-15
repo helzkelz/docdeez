@@ -11,21 +11,38 @@
 
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
-  godmode: [
+  neunuc: [
     {
       type: 'category',
-      label: 'HelenKella Godmode',
+      label: 'HelenKella Neunuc',
       collapsed: false,
       items: [
-        'godmode/godmode-overview',
-        'godmode/system-architecture-2025',
-        'godmode/godmode-architecture',
-        'godmode/godmode-subsystems',
-        'godmode/godmode-data-model',
-        'godmode/godmode-integrations',
-        'godmode/discord-voice-integrations',
-        'godmode/ecosystem-master-plan',
-        'godmode/offerings-and-services',
+        'neunuc/neunuc-overview',
+        'neunuc/system-architecture-2025',
+        'neunuc/neunuc-architecture',
+        'neunuc/neunuc-subsystems',
+        'neunuc/neunuc-data-model',
+        'neunuc/neunuc-integrations',
+        'neunuc/discord-voice-integrations',
+        'neunuc/ecosystem-master-plan',
+        'neunuc/offerings-and-services',
+        'neunuc/roadmap',
+        'neunuc/team',
+        'neunuc/contact',
+      ],
+    },
+  ],
+  moderation: [
+    {
+      type: 'category',
+      label: 'Moderation Stack',
+      collapsed: false,
+      items: [
+        'moderation/moderation-overview',
+        'moderation/stereotype-examples',
+        'moderation/channel-matrix',
+        'moderation/automod-concept',
+        'moderation/onboarding-flow',
       ],
     },
   ],

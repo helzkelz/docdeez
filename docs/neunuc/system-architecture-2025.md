@@ -4,13 +4,13 @@ title: System Architecture (2025, Current Integration)
 sidebar_label: System Architecture 2025
 ---
 
-# HelenKella Godmode System Architecture (2025)
+# HelenKella Neunuc System Architecture (2025)
 
-This page provides an updated, integrated synthesis of the Neunuc/HelenKella Godmode system, reflecting all current architecture, workflow, and platform updates.
+This page provides an updated, integrated synthesis of the Neunuc/HelenKella Neunuc system, reflecting all current architecture, workflow, and platform updates.
 
 ## Core Principle
 
-Neuro-Inclusive AI OS (Godmode) for multi-agent, intent-based workflow automation; everything modular, event-driven, micro-utility ("One Job, One Bot").
+Neuro-Inclusive AI OS (Neunuc) for multi-agent, intent-based workflow automation; everything modular, event-driven, micro-utility ("One Job, One Bot").
 
 ## Key Core and Subsystems
 
@@ -77,7 +77,7 @@ graph TD
 
 ## References
 
-- [Godmode Overview](overview.md)
-- [Architecture](architecture.md)
-- [Subsystems](subsystems.md)
+- [Neunuc Overview](overview.md)
+- [Architecture](neunuc-architecture.md)
+- [Subsystems](neunuc-subsystems.md)
 - [Discord Voice Integrations](discord-voice-integrations.md)

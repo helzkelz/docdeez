@@ -1,10 +1,10 @@
 ---
-id: godmode-data-model
+id: neunuc-data-model
 title: Data Model & Access Graph
 sidebar_label: Data Model
 ---
 
-The Godmode data model is designed as a **flexible data fabric** with an **Access Graph** at its core.
+The Neunuc data model is designed as a **flexible data fabric** with an **Access Graph** at its core.
 
 The goal is to unify:
 

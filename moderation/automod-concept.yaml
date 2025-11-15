@@ -1,0 +1,33 @@
+# Conceptual AutoMod YAML
+# Flags content for human review; does NOT auto-delete
+
+flags:
+  protected_class_stereotypes:
+    patterns:
+      - "you people are"
+      - "all [group] are"
+    exemptions:
+      - in-group talk
+  weaponized_neurodiversity:
+    patterns:
+      - "you're too autistic to"
+      - "your ADHD is showing"
+    exemptions:
+      - self-reference
+      - #nd-hangout channel
+  slur_stereotype_combo:
+    patterns:
+      - "[slur] [stereotype]"
+  malicious_misgendering:
+    patterns:
+      - "he is a woman"
+      - "she is a man"
+  trauma_weaponizing:
+    patterns:
+      - "your trauma is showing"
+      - "stop being a victim"
+
+notes:
+  - Content flagged is sent to mods for review, not deleted.
+  - Context and speaker identity are considered before action.
+  - Ephemeral bot whispers educate users on low-level flags.

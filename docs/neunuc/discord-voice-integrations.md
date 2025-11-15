@@ -1,6 +1,6 @@
 # Discord Voice Integrations
 
-This page documents the Discord integrations for voice-based ritual triggers in the Godmode system, using OpenAI's Whisper API for transcription and Bethy's universal webhook for ritual processing.
+This page documents the Discord integrations for voice-based ritual triggers in the Neunuc system, using OpenAI's Whisper API for transcription and Bethy's universal webhook for ritual processing.
 
 ## Overview
 
@@ -59,7 +59,7 @@ Both implementations call the `/bethyUniversalWebhook` endpoint with:
 }
 ```
 
-This triggers the full Godmode ritual loop: tone analysis, saboteur detection, drop generation, and delivery.
+This triggers the full Neunuc ritual loop: tone analysis, saboteur detection, drop generation, and delivery.
 
 ## References
 
