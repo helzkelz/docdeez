@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-godmode/neunuc-architecture-summary" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.9.2">
+<title data-rh="true">Neunuc AI-Powered Platform: Complete Architecture Diagrams &amp; Reference | DocDeez</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://your-docusaurus-site.example.com/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://your-docusaurus-site.example.com/docs/godmode/neunuc-architecture-summary"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Neunuc AI-Powered Platform: Complete Architecture Diagrams &amp; Reference | DocDeez"><meta data-rh="true" name="description" content="I&#x27;ve created a comprehensive multi-diagram visualization of your Neunuc platform with complete system mapping, specifications, and reference guides. Here&#x27;s what has been delivered:"><meta data-rh="true" property="og:description" content="I&#x27;ve created a comprehensive multi-diagram visualization of your Neunuc platform with complete system mapping, specifications, and reference guides. Here&#x27;s what has been delivered:"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://your-docusaurus-site.example.com/docs/godmode/neunuc-architecture-summary"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/godmode/neunuc-architecture-summary" hreflang="en"><link data-rh="true" rel="alternate" href="https://your-docusaurus-site.example.com/docs/godmode/neunuc-architecture-summary" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.7c1fb176.css">
+<script src="/assets/js/runtime~main.a5e8473c.js" defer="defer"></script>
+<script src="/assets/js/main.f4282556.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/logo.svg" alt="DocDeez Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.svg" alt="DocDeez Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">DocDeez</b></a><a class="navbar__item navbar__link" href="/docs/godmode/godmode-overview">Godmode</a><a class="navbar__item navbar__link" href="/blog">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/helzkelz/docdeez" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><main class="docMainContainer_TBSr docMainContainerEnhanced_lQrH"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Neunuc AI-Powered Platform: Complete Architecture Diagrams &amp; Reference</h1></header>
+<p>I&#x27;ve created a comprehensive multi-diagram visualization of your Neunuc platform with complete system mapping, specifications, and reference guides. Here&#x27;s what has been delivered:</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-visual-diagrams-generated">📊 Visual Diagrams Generated<a href="#-visual-diagrams-generated" class="hash-link" aria-label="Direct link to 📊 Visual Diagrams Generated" title="Direct link to 📊 Visual Diagrams Generated" translate="no">​</a></h2>
+<p><strong>Diagram 1: Complete Architecture &amp; Data Flow</strong>
+A full layered architecture showing all components from user interfaces at the top (mobile, web, voice, Discord) through the central BethyOps orchestrator with parallel core IP agents (FlexCore, LogVault, SaboteurTracker, ClarityDaemon), down to backend infrastructure (Supabase, Firebase, Redis, Cloud Storage) and external integrations (OpenAI, Google, Ko-fi, Printful, etc.). Color-coded by function: green for user interfaces, red for core agents, blue for infrastructure, orange for orchestration, yellow for external services, and purple for compliance systems.</p>
+<p><strong>Diagram 2: Orchestration Logic &amp; Compliance Subsystems</strong>
+Detailed flow showing how BethyOps processes voice input in parallel with all core IP agents, decision logic for risk detection and Safe-Mode activation, and parallel automation/compliance subsystems. Highlights event-driven functions, scheduled Discord tasks, Redis queue, CI/CD pipeline, consent tracking, COPPA gates, content moderation, and trauma-informed safety routing.</p>
+<p><strong>Diagram 3: Multi-Layer Data Flow &amp; Integration Matrix</strong>
+Hierarchical data flow showing user input channels feeding into the central orchestrator, backend infrastructure layer, and external integrations. Arrows labeled with data types. Shows complete integration architecture with AI services, monetization platforms, and cloud infrastructure.</p>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-reference-guides-generated">📋 Reference Guides Generated<a href="#-reference-guides-generated" class="hash-link" aria-label="Direct link to 📋 Reference Guides Generated" title="Direct link to 📋 Reference Guides Generated" translate="no">​</a></h2>
+<p><strong>Document 1: Neunuc-Architecture-Reference-Guide.md</strong>
+Comprehensive technical documentation covering:</p>
+<ul>
+<li class="">All tiers (user interfaces, orchestration, core IP agents, backend infrastructure)</li>
+<li class="">Complete component specifications with technology stacks and dependencies</li>
+<li class="">Modular/extensible components with swappability matrix</li>
+<li class="">Event-driven system patterns</li>
+<li class="">Neurodivergent-first design elements (🧠 ND-FIRST)</li>
+<li class="">Data flow patterns with sequence diagrams</li>
+<li class="">Compliance &amp; safety subsystems (immutable consent ledger, COPPA, trauma-literacy flagging)</li>
+<li class="">Scalability architecture and performance optimizations</li>
+<li class="">Security posture summary</li>
+<li class="">Future extensibility roadmap (phases 2-4)</li>
+<li class="">Component ownership matrix and dependency tracking</li>
+</ul>
+<p><strong>Document 2: Neunuc-System-Matrix-Reference.md</strong>
+Quick-reference matrix guide including:</p>
+<ul>
+<li class="">System architecture visual at a glance</li>
+<li class="">Tier-by-tier breakdown with compatibility tables</li>
+<li class="">Data flow patterns (5 core patterns: voice-to-response, user interaction logging, merch pipeline, behavioral intervention, event automation)</li>
+<li class="">Compliance &amp; safety subsystems detailed (consent ledger, COPPA workflow, trauma-literacy pipeline, content moderation)</li>
+<li class="">Modular components swappability matrix</li>
+<li class="">Event-driven components reference</li>
+<li class="">Neurodivergent-first design features &amp; behavioral adaptation examples</li>
+<li class="">Extensibility roadmap with implementation details</li>
+<li class="">Single point of failure analysis</li>
+<li class="">Quick deployment checklist</li>
+<li class="">Useful commands and configuration file reference</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-key-findings-color-coded-subsystems">🎯 Key Findings: Color-Coded Subsystems<a href="#-key-findings-color-coded-subsystems" class="hash-link" aria-label="Direct link to 🎯 Key Findings: Color-Coded Subsystems" title="Direct link to 🎯 Key Findings: Color-Coded Subsystems" translate="no">​</a></h2>
+<table><thead><tr><th>Color</th><th>Subsystem</th><th>Count</th><th>Criticality</th></tr></thead><tbody><tr><td><strong>🟢 Green</strong></td><td>User Interfaces</td><td>4 components</td><td>Essential</td></tr><tr><td><strong>🔴 Red</strong></td><td>Core IP Agents</td><td>5 modules</td><td>⭐⭐⭐⭐⭐ Proprietary</td></tr><tr><td><strong>🔵 Blue</strong></td><td>Infrastructure</td><td>6 services</td><td>⭐⭐⭐⭐⭐ Critical</td></tr><tr><td><strong>🟠 Orange</strong></td><td>Operations/Automation</td><td>8 systems</td><td>Important</td></tr><tr><td><strong>🟣 Purple</strong></td><td>Compliance/Safety</td><td>7 subsystems</td><td>Critical</td></tr><tr><td><strong>🟡 Yellow</strong></td><td>External Integrations</td><td>20+ services</td><td>Modular</td></tr></tbody></table>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="modular--event-driven-components-summary">[MODULAR] &amp; [EVENT-DRIVEN] Components Summary<a href="#modular--event-driven-components-summary" class="hash-link" aria-label="Direct link to [MODULAR] &amp; [EVENT-DRIVEN] Components Summary" title="Direct link to [MODULAR] &amp; [EVENT-DRIVEN] Components Summary" translate="no">​</a></h2>
+<p><strong>Most Modular</strong> (can be swapped):</p>
+<ul>
+<li class="">Frontend frameworks (React ↔ Vue/Svelte)</li>
+<li class="">Databases (Supabase ↔ Firebase ↔ MongoDB)</li>
+<li class="">AI models (GPT-4 ↔ Gemini ↔ Claude)</li>
+<li class="">Payment processors (Stripe ↔ Square)</li>
+<li class="">Cloud providers (GCP ↔ AWS ↔ Azure)</li>
+</ul>
+<p><strong>Most Event-Driven</strong> (reactive/async):</p>
+<ul>
+<li class="">BethyOps voice processing pipeline</li>
+<li class="">Discord bot command handlers</li>
+<li class="">Google Cloud Functions triggers</li>
+<li class="">Redis async queue system</li>
+<li class="">SaboteurTracker behavioral monitoring</li>
+<li class="">LogVault append operations</li>
+<li class="">GitHub Actions CI/CD</li>
+</ul>
+<p><strong>Core IP (NOT Modular)</strong>:</p>
+<ul>
+<li class="">BethyOps Orchestrator (patent-pending)</li>
+<li class="">FlexCore personality engine (trademarked)</li>
+<li class="">LogVault immutable consent ledger (patent-pending)</li>
+<li class="">SaboteurTracker behavioral models (proprietary ML)</li>
+<li class="">ClarityDaemon semantic analysis (specialized NLP)</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-neurodivergent-first-design-elements-highlighted">🧠 Neurodivergent-First Design Elements Highlighted<a href="#-neurodivergent-first-design-elements-highlighted" class="hash-link" aria-label="Direct link to 🧠 Neurodivergent-First Design Elements Highlighted" title="Direct link to 🧠 Neurodivergent-First Design Elements Highlighted" translate="no">​</a></h2>
+<p>The architecture emphasizes:</p>
+<ul>
+<li class=""><strong>Voice-first interface</strong> for hands-free ADHD operation</li>
+<li class=""><strong>Immutable LogVault</strong> as external memory for executive dysfunction</li>
+<li class=""><strong>Safe-Mode UX</strong> with high-contrast + reduced choices during crises</li>
+<li class=""><strong>Trauma-literacy flagging</strong> to prevent triggering content</li>
+<li class=""><strong>Adaptive tone (FlexCore)</strong> matching emotional state</li>
+<li class=""><strong>Async everything</strong> to prevent overwhelm from latency</li>
+<li class=""><strong>Privacy-by-default</strong> with transparent consent ledger</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-compliance--automation-subsystems">🔐 Compliance &amp; Automation Subsystems<a href="#-compliance--automation-subsystems" class="hash-link" aria-label="Direct link to 🔐 Compliance &amp; Automation Subsystems" title="Direct link to 🔐 Compliance &amp; Automation Subsystems" translate="no">​</a></h2>
+<p><strong>Automation (Orange)</strong>:</p>
+<ul>
+<li class="">Event-driven Firebase Cloud Functions</li>
+<li class="">Discord.js scheduled rituals</li>
+<li class="">Redis async job queue</li>
+<li class="">GitHub Actions CI/CD</li>
+<li class="">Scheduled admin tasks via Godmode</li>
+<li class="">Append-only ledger updates</li>
+</ul>
+<p><strong>Compliance (Purple)</strong>:</p>
+<ul>
+<li class="">Immutable consent ledger (blockchain-like)</li>
+<li class="">COPPA age gates + parental consent workflows</li>
+<li class="">Content moderation pipeline (3-layer: AI filter → keyword rules → human review)</li>
+<li class="">Supabase RLS policies (row-level security)</li>
+<li class="">Data export/deletion workflows</li>
+<li class="">Trauma-literacy keyword flagging</li>
+<li class="">Safe-Mode UX triggers with behavioral intervention</li>
+</ul>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="-reference-documents">📁 Reference Documents<a href="#-reference-documents" class="hash-link" aria-label="Direct link to 📁 Reference Documents" title="Direct link to 📁 Reference Documents" translate="no">​</a></h2>
+<p>Both markdown files above are now available for download and provide:</p>
+<ul>
+<li class="">Quick navigation tables for all components</li>
+<li class="">Deployment checklists</li>
+<li class="">Monitoring dashboard links</li>
+<li class="">Useful CLI commands</li>
+<li class="">Configuration file structure</li>
+<li class="">Single-point-of-failure analysis</li>
+<li class="">Implementation timelines for future phases</li>
+</ul>
+<p>All diagrams are color-coded, annotated with [MODULAR], [EVENT-DRIVEN], and [🧠 ND-FIRST] markers as requested, showing complete data flows, integration points, and architectural dependencies.</p>
+<p><a class="" href="/docs/godmode/Neunuc-Architecture-Reference-Guide.md">Download Architecture Guide</a>
+<a class="" href="/docs/godmode/Neunuc-System-Matrix-Reference.md">Download System Matrix</a></p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/godmode/neunuc-architecture-summary.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#-visual-diagrams-generated" class="table-of-contents__link toc-highlight">📊 Visual Diagrams Generated</a></li><li><a href="#-reference-guides-generated" class="table-of-contents__link toc-highlight">📋 Reference Guides Generated</a></li><li><a href="#-key-findings-color-coded-subsystems" class="table-of-contents__link toc-highlight">🎯 Key Findings: Color-Coded Subsystems</a></li><li><a href="#modular--event-driven-components-summary" class="table-of-contents__link toc-highlight">[MODULAR] &amp; [EVENT-DRIVEN] Components Summary</a></li><li><a href="#-neurodivergent-first-design-elements-highlighted" class="table-of-contents__link toc-highlight">🧠 Neurodivergent-First Design Elements Highlighted</a></li><li><a href="#-compliance--automation-subsystems" class="table-of-contents__link toc-highlight">🔐 Compliance &amp; Automation Subsystems</a></li><li><a href="#-reference-documents" class="table-of-contents__link toc-highlight">📁 Reference Documents</a></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/docs/godmode/godmode-overview">Godmode</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/helzkelz/docdeez" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-label="(opens in new tab)" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 HelenKella.</div></div></div></footer></div>
+</body>
+</html>
