@@ -1,10 +1,10 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   plugins: [
-    function (context, options) {
+    function () {
       return {
         name: 'docusaurus-plugin-dotenv',
-        configureWebpack(config, isServer) {
+        configureWebpack() {
           const Dotenv = require('dotenv-webpack');
           return {
             plugins: [

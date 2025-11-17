@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from '@docusaurus/Link';
 import styles from './Hero.module.css';
 
 export default function Hero() {

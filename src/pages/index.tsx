@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import clsx from 'clsx';
 
 import Section from '../components/home/Section';
@@ -60,27 +59,27 @@ const stats = [
 
 const docLinks = [
   {
-    href: 'docs/prelaunch/overview/',
+    href: '/docs/prelaunch/prelaunch-overview/',
     title: 'Prelaunch Overview',
     copy: 'Narrative, positioning, and go-to-market motions in one place.',
   },
   {
-    href: 'docs/prelaunch/readiness/',
+    href: '/docs/prelaunch/prelaunch-readiness/',
     title: 'Readiness Dashboard',
     copy: 'Scoreboard, risks, and checklists for launch sign-off.',
   },
   {
-    href: 'docs/godmode/architecture/',
+    href: '/docs/godmode/godmode-architecture/',
     title: 'Godmode Architecture',
     copy: 'Layered system design and orchestrator details.',
   },
   {
-    href: 'docs/godmode/integrations/',
+    href: '/docs/godmode/godmode-integrations/',
     title: 'Voice Ritual Integration',
     copy: 'How the Discord + Whisper flow works and how we safeguard it.',
   },
   {
-    href: 'docs/godmode/neunuc-architecture-reference-guide/',
+    href: '/docs/godmode/godmode-neunuc-architecture-reference-guide/',
     title: 'Neunuc Reference Guide',
     copy: 'Deep dive on data flows, modularity, and compliance hooks.',
   },
