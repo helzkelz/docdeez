@@ -7,11 +7,11 @@ const config = {
         configureWebpack(config, isServer) {
           const Dotenv = require('dotenv-webpack');
           return {
-            ...config,
             plugins: [
-              ...config.plugins,
               new Dotenv({
                 path: './.env',
+                silent: true,
+                systemvars: true,
               }),
             ],
           };

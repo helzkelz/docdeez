@@ -1,5 +1,7 @@
-# Covert Quotient (CQ) Layered Behavioral Model
-
+---
+id: covert-quotient-model
+title: Covert Quotient (CQ) Layered Behavioral Model
+sidebar_label: Covert Quotient Model
 ---
 
 ## Table of Contents

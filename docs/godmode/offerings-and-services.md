@@ -1,4 +1,8 @@
-# Offerings and Services
+---
+id: offerings-and-services
+title: Offerings and Services
+sidebar_label: Offerings & Services
+---
 
 HelenKella is a neurodivergent-first operating system and ecosystem designed to empower creators, survivors, and builders through consent-based autonomy, adaptive intelligence, and safe chaos. Below is a comprehensive breakdown of our offerings and services, organized by category.
 
