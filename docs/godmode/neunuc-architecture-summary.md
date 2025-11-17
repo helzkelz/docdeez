@@ -1,4 +1,8 @@
-# Neunuc AI-Powered Platform: Complete Architecture Diagrams & Reference
+---
+id: neunuc-architecture-summary
+title: Neunuc AI-Powered Platform Architecture
+sidebar_label: Neunuc Architecture Summary
+---
 
 I've created a comprehensive multi-diagram visualization of your Neunuc platform with complete system mapping, specifications, and reference guides. Here's what has been delivered:
 

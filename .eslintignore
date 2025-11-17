@@ -1,2 +1,8 @@
 integrations/discord/activity/
 integrations/discord/bot/
+build/
+.docusaurus/
+node_modules/
+src/admin/
+src/components/Editor/
+src/types/

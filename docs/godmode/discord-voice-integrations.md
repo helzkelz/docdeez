@@ -1,4 +1,8 @@
-# Discord Voice Integrations
+---
+id: discord-voice-integrations
+title: Discord Voice Integrations
+sidebar_label: Discord Voice Integrations
+---
 
 This page documents the Discord integrations for voice-based ritual triggers in the Godmode system, using OpenAI's Whisper API for transcription and Bethy's universal webhook for ritual processing.
 
