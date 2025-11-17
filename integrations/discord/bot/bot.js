@@ -1,5 +1,9 @@
 const { Client, GatewayIntentBits } = require('discord.js');
-const { joinVoiceChannel, EndBehaviorType, getVoiceConnection } = require('@discordjs/voice');
+const {
+  joinVoiceChannel,
+  EndBehaviorType,
+  getVoiceConnection,
+} = require('@discordjs/voice');
 const { createWriteStream } = require('fs');
 const prism = require('prism-media');
 const fetch = require('node-fetch');
@@ -29,18 +33,30 @@ client.on('messageCreate', async (message) => {
     const opusStream = receiver.subscribe(userId, {
       end: { behavior: EndBehaviorType.AfterSilence, duration: 1000 },
     });
-    const pcmStream = opusStream.pipe(new prism.opus.Decoder({ rate: 48000, channels: 2, frameSize: 960 }));
+    const pcmStream = opusStream.pipe(
+      new prism.opus.Decoder({ rate: 48000, channels: 2, frameSize: 960 }),
+    );
     const output = createWriteStream(`./recordings/${userId}.pcm`);
     pcmStream.pipe(output);
 
     output.on('finish', async () => {
       // Convert PCM to MP3
       const { exec } = require('child_process');
-      exec(`ffmpeg -f s16le -ar 48000 -ac 2 -i ./recordings/${userId}.pcm ./final/${userId}.mp3`, async () => {
-        const transcript = await transcribeWithWhisper(`./final/${userId}.mp3`);
-        await callBethy(transcript, message.author.email || 'discord-user@example.com');
-        message.reply(`Ritual transcribed: "${transcript}" — Drop dispatched!`);
-      });
+      exec(
+        `ffmpeg -f s16le -ar 48000 -ac 2 -i ./recordings/${userId}.pcm ./final/${userId}.mp3`,
+        async () => {
+          const transcript = await transcribeWithWhisper(
+            `./final/${userId}.mp3`,
+          );
+          await callBethy(
+            transcript,
+            message.author.email || 'discord-user@example.com',
+          );
+          message.reply(
+            `Ritual transcribed: "${transcript}" — Drop dispatched!`,
+          );
+        },
+      );
     });
   }
 });

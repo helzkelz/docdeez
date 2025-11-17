@@ -38,22 +38,22 @@ The system is built on three pillars:
 
 Godmode is organized into four primary layers:
 
-1. **Integrations & Data Fabric**  
-   - Connectors for calendars, HR, ITSM, infra, logging, and collaboration tools  
+1. **Integrations & Data Fabric**
+   - Connectors for calendars, HR, ITSM, infra, logging, and collaboration tools
    - Data harmonization into a unified **Access Graph**
 
-2. **Core Intelligence & Knowledge**  
-   - **Synaptic Cortex Nexus**: core reasoning engine  
+2. **Core Intelligence & Knowledge**
+   - **Synaptic Cortex Nexus**: core reasoning engine
    - **Intelligent Knowledge Graph & Workflow Synthesis Engine**: contextual memory and automation builder
 
-3. **Cognitive & Culture Sub-systems**  
-   - **Neunuc (ARR Loop)** for adaptive planning and roadmap review  
-   - **Neuro-Navigator** for neurodivergence-aware guidance  
-   - **Ethos Navigator** for trust, consent, and cultural configuration  
+3. **Cognitive & Culture Sub-systems**
+   - **Neunuc (ARR Loop)** for adaptive planning and roadmap review
+   - **Neuro-Navigator** for neurodivergence-aware guidance
+   - **Ethos Navigator** for trust, consent, and cultural configuration
    - **Humor SOP** for safe, identity-aware humor & communication
 
-4. **Bethy: AI Voice Orchestrator**  
-   - Primary interface & conductor  
+4. **Bethy: AI Voice Orchestrator**
+   - Primary interface & conductor
    - Translates messy human intent into structured actions across the stack
 
 ---
@@ -63,37 +63,37 @@ Godmode is organized into four primary layers:
 - **Overwhelm Triage**  
   User: “I’m overloaded. What the hell do I actually do next?”  
   Godmode:
-  - Pulls tasks/events from integrated tools  
-  - Runs an **Adaptive Roadmap Review (ARR)**  
+  - Pulls tasks/events from integrated tools
+  - Runs an **Adaptive Roadmap Review (ARR)**
   - Returns a minimal, safe, prioritized action list tailored to the user’s neuro profile
 
-- **Neurodivergent-Aware Planning**  
-  - Breaks down large projects into small, sequenceable steps  
+- **Neurodivergent-Aware Planning**
+  - Breaks down large projects into small, sequenceable steps
   - Respects timeboxing, energy levels, and sensory constraints
 
-- **Ethical Automation Across Systems**  
-  - Executes actions in Jira, on-call tools, infra orchestrators, etc.  
+- **Ethical Automation Across Systems**
+  - Executes actions in Jira, on-call tools, infra orchestrators, etc.
   - Logs every action with “who / what / why” and explicit user consent policies
 
 ---
 
 ## Component Overview
 
-| Layer        | Component                             | Responsibility                                  |
-|-------------|----------------------------------------|------------------------------------------------|
-| Interface   | Bethy                                  | Orchestration, conversation, intent handling   |
-| Cognitive   | Synaptic Cortex Nexus                  | Core AI reasoning & planning                   |
-| Cognitive   | Neunuc ARR Loop                        | Adaptive roadmap review & prioritization       |
-| Cognitive   | Neuro-Navigator                        | ND-aware guidance & recovery support           |
-| Culture     | Ethos Navigator                        | Trust, consent, guardrails, culture config     |
-| Culture     | Humor SOP                              | Tone, humor, stereotype-safe comms             |
-| Data        | Intelligent Knowledge Graph            | Knowledge, relationships, context              |
-| Data        | Data Fabric & Access Graph             | Integration, harmonization, governance         |
-| Infra       | Integration Catalog & Sync Engine      | Connectors, sync jobs, bidirectional updates   |
+| Layer     | Component                         | Responsibility                               |
+| --------- | --------------------------------- | -------------------------------------------- |
+| Interface | Bethy                             | Orchestration, conversation, intent handling |
+| Cognitive | Synaptic Cortex Nexus             | Core AI reasoning & planning                 |
+| Cognitive | Neunuc ARR Loop                   | Adaptive roadmap review & prioritization     |
+| Cognitive | Neuro-Navigator                   | ND-aware guidance & recovery support         |
+| Culture   | Ethos Navigator                   | Trust, consent, guardrails, culture config   |
+| Culture   | Humor SOP                         | Tone, humor, stereotype-safe comms           |
+| Data      | Intelligent Knowledge Graph       | Knowledge, relationships, context            |
+| Data      | Data Fabric & Access Graph        | Integration, harmonization, governance       |
+| Infra     | Integration Catalog & Sync Engine | Connectors, sync jobs, bidirectional updates |
 
 For deep dives, see:
 
-- [Architecture](./godmode-architecture)
-- [Sub-systems](./godmode-subsystems)
-- [Data Model](./godmode-data-model)
-- [Integrations](./godmode-integrations)
+- [Architecture](/docs/godmode/godmode-architecture)
+- [Sub-systems](/docs/godmode/godmode-subsystems)
+- [Data Model](/docs/godmode/godmode-data-model)
+- [Integrations](/docs/godmode/godmode-integrations)

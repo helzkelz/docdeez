@@ -1,0 +1,57 @@
+.communityBlock {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.quote {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 2rem;
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.stats {
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  margin-bottom: 2rem;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.ctaPrimary {
+  background-color: var(--ifm-color-primary-light);
+  color: var(--ifm-color-primary-darkest);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.ctaPrimary:hover {
+  background-color: var(--ifm-color-primary-lighter);
+}
+
+.ctaSecondary {
+  background-color: transparent;
+  color: var(--ifm-font-color-base);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.ctaSecondary:hover {
+  background-color: var(--ifm-color-emphasis-200);
+  border-color: var(--ifm-color-emphasis-500);
+}

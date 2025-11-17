@@ -1,0 +1,55 @@
+name: Generate Docs
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'docs/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'yarn.lock'
+      - '.github/workflows/**'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Allow the action to push back to the repo using the GITHUB_TOKEN
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          # prefer clean install if lockfile exists, fall back to install
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Generate docs
+        run: npm run generate:docs
+
+      - name: Commit and push changes (if any)
+        env:
+          GIT_AUTHOR_NAME: "github-actions[bot]"
+          GIT_AUTHOR_EMAIL: "41898282+github-actions[bot]@users.noreply.github.com"
+        run: |
+          git config user.name "${GIT_AUTHOR_NAME}"
+          git config user.email "${GIT_AUTHOR_EMAIL}"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore(docs): auto-generated docs and sidebars [skip ci]" || echo "Nothing to commit"
+            git push
+          else
+            echo "No changes to commit"
+          fi

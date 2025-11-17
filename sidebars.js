@@ -14,18 +14,49 @@ const sidebars = {
   godmode: [
     {
       type: 'category',
-      label: 'HelenKella Godmode',
+      label: 'Prelaunch Hub',
+      collapsed: false,
+      items: ['prelaunch/prelaunch-overview', 'prelaunch/prelaunch-readiness'],
+    },
+    {
+      type: 'category',
+      label: 'Product Foundations',
       collapsed: false,
       items: [
         'godmode/godmode-overview',
         'godmode/system-architecture-2025',
+        'godmode/covert-quotient-model',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Architecture & Subsystems',
+      collapsed: false,
+      items: [
         'godmode/godmode-architecture',
         'godmode/godmode-subsystems',
         'godmode/godmode-data-model',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Integrations & Operations',
+      collapsed: false,
+      items: [
         'godmode/godmode-integrations',
         'godmode/discord-voice-integrations',
-        'godmode/ecosystem-master-plan',
         'godmode/offerings-and-services',
+        'godmode/ecosystem-master-plan',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Neunuc Reference Library',
+      collapsed: false,
+      items: [
+        'godmode/neunuc-architecture-summary',
+        'godmode/godmode-neunuc-architecture-reference-guide',
+        'godmode/godmode-neunuc-system-matrix-reference',
       ],
     },
   ],

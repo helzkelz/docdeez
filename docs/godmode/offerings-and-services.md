@@ -29,7 +29,7 @@ Pricing: Integrated into OS tiers; add-ons start at $10/mo per tool.
 Empowerment-focused features for building and monetizing communities.
 
 - **Branding & Strategy Services**: Brand kits, meme kits, content prompts, collaboration matching, and coaching. Includes upgrade tiers with visibility boosts.
-- **Gamified Events**: Sh*tpost Olympics (meme contests), Chaos Collabs (paired creator drops), Mood Wars (themed content), Sounds + Sins (music + NSFW streams), and Quiet Takeovers (sensory-safe days).
+- **Gamified Events**: Sh\*tpost Olympics (meme contests), Chaos Collabs (paired creator drops), Mood Wars (themed content), Sounds + Sins (music + NSFW streams), and Quiet Takeovers (sensory-safe days).
 - **Mental Health & ND-Friendly UX**: Chaos/Calm feed switching, Quiet Mode for burnout, no leaderboards, mood-tagged filters, and sensory-safe interactions.
 - **Safe Spaces**: The Vault (NSFW creator space), The Commons (SFW artist space), The Park (games and rest), The Engine (contribution hub), and The Stage (creator spotlight).
 

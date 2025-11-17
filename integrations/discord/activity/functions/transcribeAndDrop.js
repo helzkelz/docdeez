@@ -8,11 +8,14 @@ exports.transcribeAndDrop = functions.https.onRequest(async (req, res) => {
   form.append('model', 'whisper-1');
 
   // Transcribe with Whisper
-  const whisperRes = await fetch('https://api.openai.com/v1/audio/transcriptions', {
-    method: 'POST',
-    headers: { Authorization: `Bearer ${functions.config().openai.key}` },
-    body: form,
-  });
+  const whisperRes = await fetch(
+    'https://api.openai.com/v1/audio/transcriptions',
+    {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${functions.config().openai.key}` },
+      body: form,
+    },
+  );
   const { text } = await whisperRes.json();
 
   // Trigger Bethy

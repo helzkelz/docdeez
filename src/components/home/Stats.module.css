@@ -1,0 +1,21 @@
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.statCard {
+  background: var(--ifm-card-background-color);
+  padding: 1.5rem;
+  border-radius: var(--ifm-card-border-radius);
+  border: 1px solid var(--ifm-card-border-color);
+}
+
+.statValue {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}

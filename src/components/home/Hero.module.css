@@ -1,0 +1,77 @@
+.hero {
+  background: var(--ifm-color-primary-darkest);
+  color: var(--ifm-color-white);
+  padding: 4rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--ifm-color-primary-dark);
+}
+
+.heroTag {
+  display: inline-block;
+  background-color: var(--ifm-color-primary);
+  color: var(--ifm-color-white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--ifm-global-radius);
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: var(--ifm-color-gray-300);
+}
+
+.heroMeta {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--ifm-color-gray-400);
+}
+
+.heroActions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.ctaPrimary {
+  background-color: var(--ifm-color-primary-light);
+  color: var(--ifm-color-primary-darkest);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.ctaPrimary:hover {
+  background-color: var(--ifm-color-primary-lighter);
+}
+
+.ctaSecondary {
+  background-color: transparent;
+  color: var(--ifm-color-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--ifm-global-radius);
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid var(--ifm-color-primary-dark);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.ctaSecondary:hover {
+  background-color: var(--ifm-color-primary-dark);
+  border-color: var(--ifm-color-primary);
+}

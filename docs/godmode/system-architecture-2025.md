@@ -69,7 +69,7 @@ graph TD
 
 ## Next Actions/Checklist
 
-1. Use *inventory* to map all active and planned modules.
+1. Use _inventory_ to map all active and planned modules.
 2. Validate/uphold modular, micro-utility/plug-and-play agent strategy.
 3. Continue automating compliance, consent, and policy enforcement.
 4. Export/diagram updated system in mermaid/markdown as living architecture.

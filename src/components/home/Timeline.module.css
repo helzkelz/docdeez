@@ -1,0 +1,27 @@
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.timelinePhase {
+  flex-shrink: 0;
+  width: 180px;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  text-align: right;
+}
+
+.timelineBody {
+  margin: 0;
+  padding-left: 2rem;
+  border-left: 2px solid var(--ifm-color-emphasis-300);
+}
