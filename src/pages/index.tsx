@@ -1,8 +1,8 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
+import clsx from 'clsx';
 
-import Hero from '../components/home/Hero';
 import Section from '../components/home/Section';
 import { Card, CardGrid } from '../components/home/Card';
 import Timeline from '../components/home/Timeline';
@@ -107,11 +107,17 @@ const carouselPlaceholders = [
 export default function Home() {
   return (
     <Layout
-      title="Neuronucleus · Prelaunch Hub"
-      description="Mission control for the Neuronucleus prelaunch: merch capsule, ritual voice loop, architecture proof, and readiness dashboard."
-    >
-      <main className={styles.page}>
-        <Hero />
+      title="Neunuc nūc"
+      description="nūc — From niche to nucleus.">
+      <main>
+        <header className={clsx('hero hero--dark', styles.heroCustom)}>
+          <div className="container">
+            <h1 className="hero__title">neunuc</h1>
+            <p className="hero__subtitle">
+              <span className="nuc-glow">nūc</span> — From niche to nucleus.
+            </p>
+          </div>
+        </header>
 
         <Section
           title="What goes live at launch"

@@ -1,5 +1,24 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
+  plugins: [
+    function (context, options) {
+      return {
+        name: 'docusaurus-plugin-dotenv',
+        configureWebpack(config, isServer) {
+          const Dotenv = require('dotenv-webpack');
+          return {
+            ...config,
+            plugins: [
+              ...config.plugins,
+              new Dotenv({
+                path: './.env',
+              }),
+            ],
+          };
+        },
+      };
+    },
+  ],
   title: 'DocDeez',
   tagline: 'Documentation for HelenKella Godmode',
   favicon: 'img/favicon.ico',
@@ -10,6 +29,13 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
   trailingSlash: true,
+
+  stylesheets: [
+    {
+      href: 'https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap',
+      rel: 'stylesheet',
+    },
+  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -41,13 +67,9 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -56,12 +78,17 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
+      },
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'DocDeez',
+        title: 'neunuc — nūc',
         logo: {
-          alt: 'DocDeez Logo',
+          alt: 'neunuc — nūc Logo',
           src: 'img/logo.svg',
         },
         items: [

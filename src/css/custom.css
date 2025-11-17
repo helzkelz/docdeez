@@ -1,13 +1,14 @@
-/* stylelint-disable docusaurus/copyright-header */
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
+/* src/css/custom.css */
 
-/* You can override the default Infima variables here. */
+/* Brand color */
 :root {
-  --ifm-color-primary: #7c3aed; /* Purple for neurodivergent theme */
+  --brand-coral: #FF6F61;
+  --bg-dark: #071018;
+  /* deep dark navy/near-black */
+  --muted-1: #a8b0b6;
+  --white-glow: rgba(255, 255, 255, 0.95);
+  --ifm-color-primary: #7c3aed;
+  /* Purple for neurodivergent theme */
   --ifm-color-primary-dark: #6d28d9;
   --ifm-color-primary-darker: #5b21b6;
   --ifm-color-primary-darkest: #4c1d95;
@@ -18,6 +19,145 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
   --ifm-heading-font-weight: 600;
+}
+
+/* Make sure the global site defaults feel dark */
+.theme-dark {
+  background-color: var(--bg-dark);
+  color: #e9eef2;
+}
+
+/* Page background / main wrapper */
+.theme-dark .main-wrapper {
+  background-color: var(--bg-dark);
+}
+
+/* Navbar styling */
+.navbar {
+  background: linear-gradient(180deg, rgba(7, 16, 24, 0.95), rgba(7, 16, 24, 0.85));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Force all text to lighter shades on dark mode */
+.theme-dark .navbar__items .navbar__link,
+.theme-dark .navbar__items .navbar__item,
+.theme-dark .navbar__title {
+  color: #e7eef3;
+}
+
+/* Headline font: Bebas Neue */
+.navbar__brand .navbar__title,
+.navbar__brand .navbar__logo {
+  font-family: 'Bebas Neue', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  /* Bebas Neue is already uppercase */
+  font-size: 1.6rem;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+}
+
+/* Accessibility: keep the original text available to screen readers
+   but hide it visually. We'll render the visible title with pseudo-elements. */
+.navbar__brand .navbar__title {
+  color: transparent;
+  /* hide the real text from sighted users */
+  -webkit-text-fill-color: transparent;
+}
+
+/* Pseudo elements render the visible brand with contrasting NUC */
+.navbar__brand .navbar__title::before {
+  content: 'neunuc';
+  color: var(--brand-coral);
+  display: inline-block;
+  margin-right: 0.4rem;
+  font-size: 1.6rem;
+  vertical-align: middle;
+}
+
+/* NUC in glowing white */
+.navbar__brand .navbar__title::after {
+  content: 'nūc';
+  color: #ffffff;
+  display: inline-block;
+  font-weight: 700;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+  text-shadow:
+    0 0 6px rgba(255, 255, 255, 0.92),
+    0 0 12px rgba(255, 255, 255, 0.7),
+    0 0 18px rgba(255, 255, 255, 0.45);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Small screens: shrink */
+@media (max-width: 640px) {
+
+  .navbar__brand .navbar__title::before,
+  .navbar__brand .navbar__title::after {
+    font-size: 1.15rem;
+  }
+
+  .navbar__brand .navbar__title {
+    font-size: 1.15rem;
+  }
+}
+
+/* Hero / tagline: two routes
+   - If you keep using the site-wide tagline (config.tagline), target the hero subtitle.
+   - If you want absolute control, use the optional custom home page (index.js) below.
+*/
+
+/* If using default tagline rendering */
+.hero__subtitle {
+  color: var(--muted-1);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-size: 1.05rem;
+  margin-top: 0.6rem;
+}
+
+/* Optional injected glowing 'nuc' span if you add a <span class="nuc-glow">nūc</span> */
+.nuc-glow {
+  font-family: 'Bebas Neue', 'Helvetica Neue', Arial, sans-serif;
+  color: #fff;
+  text-shadow:
+    0 0 8px rgba(255, 255, 255, 0.95),
+    0 0 16px rgba(255, 255, 255, 0.6),
+    0 0 28px rgba(255, 255, 255, 0.25);
+  margin-right: 0.35rem;
+}
+
+/* Slight tweak for hero subtitle if you do include a nuc-glow element */
+.hero__subtitle .nuc-glow {
+  display: inline-block;
+  vertical-align: baseline;
+  margin-right: 0.35rem;
+}
+
+/* Make code blocks / cards look good on dark theme */
+.theme-dark .card,
+.theme-dark .infima-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+  border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Button primary = coral */
+.theme-dark .button--primary {
+  background-color: var(--brand-coral);
+  border: none;
+  color: #081018;
+}
+
+/* Fine-tune contrast for smaller UI elements */
+.theme-dark .footer {
+  background: linear-gradient(180deg, rgba(7, 16, 24, 0.9), rgba(7, 16, 24, 0.95));
+}
+
+/* tiny polish for subtle glow ambience for large hero headers */
+.hero--dark .hero__title {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.6);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -49,7 +189,9 @@
 }
 
 /* Improve readability */
-.markdown h1, .markdown h2, .markdown h3 {
+.markdown h1,
+.markdown h2,
+.markdown h3 {
   font-weight: 600;
   line-height: 1.3;
 }
