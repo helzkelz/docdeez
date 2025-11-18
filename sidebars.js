@@ -16,7 +16,7 @@ const sidebars = {
       type: 'category',
       label: 'Prelaunch Hub',
       collapsed: false,
-      items: ['prelaunch/prelaunch-overview', 'prelaunch/prelaunch-readiness'],
+      items: ['prelaunch/prelaunch-overview', 'prelaunch/prelaunch-readiness, 'prelaunch/community-strategy'],],
     },
     {
       type: 'category',
